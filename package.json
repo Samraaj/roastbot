@@ -1,0 +1,21 @@
+{
+  "name": "roastbot",
+  "version": "1.0.0",
+  "description": "Messenger chatbot that will roast your photos",
+  "main": "app.js",
+  "scripts": {
+    "test": "testapp"
+  },
+  "keywords": [
+    "messenger",
+    "chatbot",
+    "bot",
+    "roast"
+  ],
+  "author": "Samraaj Singh Bath",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "fs": "0.0.1-security"
+  }
+}
