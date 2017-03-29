@@ -2,8 +2,10 @@ PAGE_ACCESS_TOKEN = "EAAK2N1K1VwgBACWLBuzqhcZAVcsIMq5RGFKm4evw0WqN6gWM2kIOlIvAfP
 
 var express = require('express');
 var fs = require('fs');
+var bodyParser = require('body-parser');
 
 var app = express();
+app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
 	res.send('Welcome to roastbot!');
