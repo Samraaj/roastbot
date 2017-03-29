@@ -4,7 +4,7 @@
   "description": "Messenger chatbot that will roast your photos",
   "main": "app.js",
   "scripts": {
-    "test": "testapp"
+    "start": "node app.js"
   },
   "keywords": [
     "messenger",
@@ -16,12 +16,10 @@
     "type": "git",
     "url": "https://github.com/Samraaj/roastbot.git"
   },
-  "scripts": {
-    "start": "node app.js"
-  },
   "author": "Samraaj Singh Bath",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "fs": "0.0.1-security"
   }
