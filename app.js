@@ -1,4 +1,4 @@
-PAGE_ACCESS_TOKEN = "EAAK2N1K1VwgBACWLBuzqhcZAVcsIMq5RGFKm4evw0WqN6gWM2kIOlIvAfPpeDqJaT3oD07HajsRNnHV5bLZAOiZBrnzK3ou3VMEbZAY38yP7awCzyAZCbcKy2b0N75Kjs15uIi1fJ1YrZAU4thZBDyZARjb1dS70wZB3JMpzquTX6oQZDZD";
+PAGE_ACCESS_TOKEN = "EAAK2N1K1VwgBAHOjgfR9ujXw4BYx6hMXgmQBTV8gigDBwgEXO8loHaOXsEIjSXIIJsJyFECblkThZCsf0ZC6vs7ZAZBDfSYcUqHVxQSR7ZAIVxziJXCz4UqxQPLf9aJi9T0WudZCIZAsbZAAmE9oweCnnEMQtHC0kog3vVtg9ZC2EJAZDZD";
 
 var express = require('express');
 var fs = require('fs');
@@ -24,6 +24,7 @@ app.get('/webhook', function(req, res) {
 });
 
 app.post('/webhook', function(req, res) {
+	console.log('recieved post!');
 	console.log(JSON.stringify(req));
 	var data = req.body;
 
